@@ -7,10 +7,11 @@
 .container{
   width: 100%;
   height: 100%;
+  color: #fff;
   background-color: #000000;
 }
 header{
-  padding: 1rem 0.5rem;
+  padding: 1rem 0.5rem 0rem 0.5rem;
   background-color: #000000;
   display: flex;
 }
@@ -21,21 +22,13 @@ header{
   margin: auto;
   border-right: 3px solid purple;
 }
-.headline_container{
-  width: 40%;
-  padding: 0rem 1rem;
-  display: flex;
-  margin: auto;
-  border-right: 3px solid purple;
-  text-align: justify;
-}
 .profile_img{
   width: 6rem;
   height: 6rem;
   border-radius: 100%;
   border: 3px solid purple;
 }
-.name_container{
+.headline_container{
   width: 60%;
   padding: 2rem 0.5rem 2rem 1rem;
   display: flex;
@@ -54,25 +47,92 @@ header{
 }
 section{
   width: 100%;
-  padding: 2rem 0.5rem;
+  padding: 1rem 0.5rem;
   background-color: #000000;
 }
 .circle{
   color: purple;
 }
-footer{
-  width: 100%;
-  padding: 2rem 0.5rem;
-  background-color: #000000;
-}
 .head_container{
   width: 100%;
   padding: 0rem 0rem;
-  flex-direction: column;
   }
 .header{
   padding-top: 1rem;
   color: #656565;
+}
+.about_section{
+  width: 100%;
+  padding: 0rem 0.5rem 1rem 0.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0.5rem;
+}
+.one{
+  grid-column: 1/span 2;
+  grid-row: 1/2;
+}
+.two{
+  grid-column: 1/ 2;
+  grid-row: 2/3;
+}
+.three{
+  grid-column: 2/2;
+  grid-row: 2/3;
+}
+.four{
+  grid-column: 1/span 2;
+  grid-row: 3/3;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+.about_me{
+  padding-top: 0rem;
+  color: white;
+  font-size: 0.8rem;
+  margin: 0.4rem 0rem;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+}
+.txt{
+  font-size: 0.9rem;
+  line-height: 1.5;
+  text-align: left;
+  margin: 0rem;
+  color: #BBBBBB;
+}
+.icon_cont{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.icon{
+  width: 3rem;
+  height: 3rem;
+  border-radius: 100%;
+  background-color: #181A1C;
+  border: 1px solid #181A1C;
+  display: flex;
+  text-decoration: none;
+ }
+.center{
+  margin: auto;
+  color: white;
+ }
+ .stats{
+   font-size: 2rem;
+   font-weight: 60;
+   text-align: center;
+   margin: 0rem;
+ }
+ .about_stats{
+   text-align: center;
+ }
+footer{
+  width: 100%;
+  padding: 2rem 0.5rem;
+  background-color: #000000;
 }
 .footer_contacts_container{
   width: 100%;
@@ -81,9 +141,10 @@ footer{
   color: #FFFFFF;
   font-size: 0.9rem;
   line-height: 1;
+  margin: 0rem 0rem 0.5rem 0rem;
 }
 .footer_txt{
-  color: #FFFFFF;
+  color: #fff;
   font-size: 1.2rem;
   line-height: 1.5;
   font-weight: bold;
