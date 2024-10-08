@@ -11,7 +11,42 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <nav class="nav_bar">
+      <div class="nav_cont">
+        <a class="nav_bar_brand" href="#">
+          XioN
+        </a>
+        <div class="grid_cont">
+         <button class="btn_frosted rounded-pill " type="button">
+          LETS TALK
+        </button>
+        <button id="toggleMenu" class="btn_white rounded-pill " type="button">
+          MENU
+        </button> 
+        </div>
+      </div>
+    </nav>
+    <div id="menu" class="navbar_card">
+      <a href="#about" class="menu_link">
+        About
+      </a>
+      <a href="#service" class="menu_link">
+        Service
+      </a>
+      <a href="#portfolio" class="menu_link">
+        Portfolio
+      </a>
+      <a href="#awards" class="menu_link">
+        Awards
+      </a>
+      <a href="#blog" class="menu_link">
+        Blog
+      </a>
+      <a href="#contact" class="menu_link">
+        Contact
+      </a>
+    </div>
+    <header id="about">
       <div class="profile_img_container">
         <img src="assets/images/profile_img.jpg" alt="profile_img" class="profile_img">
       </div>
@@ -23,7 +58,7 @@
         </p>
       </div>
     </header>
-    <section class="about_section">
+    <section  class="about_section">
       <div class="cont one">
         <div class="head_container">
           <p class="header about_me">
@@ -104,31 +139,174 @@
         </div>
       </div>
     </section>
-    <section>
+    <section id="service">
       <div class="head_container">
         <p class="header">
           <i class="fa-solid fa-circle-notch fa-lg circle"></i> 
           SERVICES
         </p>
       </div>
+      <div class="head_container">
+          <p class="header Services">
+            What I Do
+          </p>
+        </div>
+      <div class="card_cont" id="card">
+        <div class="card-body">
+          <p class="card_num">01/</p>
+          <h5 class="title">
+            <i class="fa-solid fa-code fa-2xl title_icon"></i>
+            Web Development
+          </h5>
+          <p class="card-text">
+            With knowledge of HTML5, 
+            CSS, & bootsrap i can make
+            your dream website an instant
+            reality
+          </p>
+          </div>
+      </div>
     </section>
-    <section>
+    <section id="portfolio" class="portfolio_section">
+      <div class="card_cont portfolio">
+        <div class="head_container">
+          <p class="header">
+            <i class="fa-solid fa-circle-notch fa-lg circle"></i> 
+            PORTFOLIO
+          </p>
+        </div>
+        <div class="card-body">
+          <div class="head_container">
+            <p class="header Services">
+              Recent Works
+            </p>
+            <p class="card-text">
+              With knowledge of HTML5, 
+              CSS, & bootsrap i can make
+              your dream website an
+              instant reality
+            </p>
+          </div>
+        </div>
+        <div class="btn_icon_cont">
+          <button class="btn btn-dark rounded-circle p-3" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <i class="fa-solid fa-arrow-left"></i>
+        </button>
+        <button class="btn btn-dark rounded-circle p-3" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+        </div>
+        <div class="carousel_cont">
+          <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="img_cont">
+                  <img src="assets/images/Banner.jpeg" alt="banner_img" class="carousel_img">
+                </div>
+                <div class="txt_cont">
+                  <p class="carousel_title">
+                    Visual Art ★ Concept
+                  </p>
+                  <p class="carousel_header">
+                    FOLD TWIST ABSTRACT
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item ">
+                <h3>ghfde</h3>
+              </div>
+              <div class="carousel-item ">
+                <h3>fgfdd</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="awards">
       <div class="head_container">
         <p class="header">
           <i class="fa-solid fa-circle-notch fa-lg circle"></i> 
           ACHIEVEMENTS
         </p>
       </div>
-    </section>
-    <section>
       <div class="head_container">
-        <p class="header">
-          <i class="fa-solid fa-circle-notch fa-lg circle"></i> 
-          JOURNAL
-        </p>
+          <p class="header Services">
+            AWARDS
+          </p>
+        </div>
+      <div class="card_cont" id="card">
+        <div class="card-body">
+          <p class="card_num">01/</p>
+          <h5 class="title">
+            <i class="fa-solid fa-code fa-2xl title_icon"></i>
+            Web Development
+          </h5>
+          <p class="card-text">
+            With knowledge of HTML5, 
+            CSS, & bootsrap i can make
+            your dream website an instant
+            reality
+          </p>
+        </div>
       </div>
     </section>
-    <footer>
+    <section id="blog" class="journal_section">
+      <div class="card_cont portfolio">
+        <div class="head_container">
+          <p class="header">
+            <i class="fa-solid fa-circle-notch fa-lg circle"></i> 
+            JOURNAL
+          </p>
+        </div>
+        <div class="card-body">
+          <div class="head_container">
+            <p class="header Services">
+              Blog Posts
+            </p>
+            <p class="card-text">
+              Checkout my opinions,
+              thoughts, and ideas on
+              various tech related topics
+            </p>
+          </div>
+        </div>
+        <div class="btn_icon_cont">
+          <button class="btn btn-dark rounded-circle p-3" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <i class="fa-solid fa-arrow-left"></i>
+        </button>
+        <button class="btn btn-dark rounded-circle p-3" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+        </div>
+        <div class="carousel_cont">
+          <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="img_cont">
+                  <img src="assets/images/Banner.jpeg" alt="banner_img" class="carousel_img">
+                </div>
+                <div class="txt_cont">
+                  <p class="carousel_title">
+                    Visual Art ★ Concept
+                  </p>
+                  <p class="carousel_header">
+                    FOLD TWIST ABSTRACT
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item ">
+                <h3>ghfde</h3>
+              </div>
+              <div class="carousel-item ">
+                <h3>fgfdd</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer id="contact">
       <div class="head_container">
         <p class="header">
           <i class="fa-solid fa-circle-notch fa-lg circle"></i> 
