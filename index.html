@@ -10,15 +10,17 @@
   <title>Heriage_iyoke</title>
 </head>
 <body>
-  <div class="container">
-    <nav class="nav_bar">
+  <div class="container-fluid">
+    <nav class="nav_bar" id="navbar">
       <div class="nav_cont">
         <a class="nav_bar_brand" href="#">
           XioN
         </a>
         <div class="grid_cont">
          <button class="btn_frosted rounded-pill " type="button">
-          LETS TALK
+           <a href="#contact" class="nav_link">
+             LETS TALK
+           </a>
         </button>
         <button id="toggleMenu" class="btn_white rounded-pill " type="button">
           MENU
@@ -26,8 +28,9 @@
         </div>
       </div>
     </nav>
-    <div id="menu" class="navbar_card" style="display:none">
-      <a href="#about" class="menu_link">
+    <div id="menu" class="navbar_card" style="display:none" data-bs-smooth-scroll="true" data-bs-target="#navbar" data-bs-spy="scroll" data-bs-root-margin="0px 0px -40%">
+      <a href="#about" class="menu_link active" id="link">
+        <i class="fa-solid fa-arrow-right" id="icon"></i>
         About
       </a>
       <a href="#service" class="menu_link">
@@ -140,19 +143,37 @@
       </div>
     </section>
     <section id="service">
-      <div class="head_container">
-        <p class="header">
-          <i class="fa-solid fa-circle-notch fa-lg circle"></i> 
-          SERVICES
-        </p>
-      </div>
-      <div class="head_container">
+      <div class="pc_view_1">
+        <div class="head_container">
+          <p class="header">
+            <i class="fa-solid fa-circle-notch fa-lg circle"></i> 
+            SERVICES
+          </p>
+        </div>
+        <div class="head_container">
           <p class="header Services">
             What I Do
           </p>
         </div>
-      <div class="card_cont" id="card">
-        <div class="card-body">
+      </div>
+      <div class="card_grid_1">
+        <div class="card_cont" id="card">
+        <div class="card_body">
+          <p class="card_num">01/</p>
+          <h5 class="title">
+            <i class="fa-solid fa-code fa-2xl title_icon"></i>
+            Web Development
+          </h5>
+          <p class="card-text">
+            With knowledge of HTML5, 
+            CSS, & bootsrap i can make
+            your dream website an instant
+            reality
+          </p>
+          </div>
+        </div>
+        <div class="card_cont" id="card">
+        <div class="card_body">
           <p class="card_num">01/</p>
           <h5 class="title">
             <i class="fa-solid fa-code fa-2xl title_icon"></i>
@@ -166,9 +187,10 @@
           </p>
           </div>
       </div>
+      </div>
     </section>
     <section id="portfolio" class="portfolio_section">
-      <div class="card_cont portfolio">
+      <div class="portfolio">
         <div class="head_container">
           <p class="header">
             <i class="fa-solid fa-circle-notch fa-lg circle"></i> 
@@ -189,15 +211,15 @@
           </div>
         </div>
         <div class="btn_icon_cont">
-          <button class="btn btn-dark rounded-circle p-3" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <button class="btn btn-dark rounded-circle p-3" type="button" data-bs-target="#portfolio_carousel" data-bs-slide="prev">
           <i class="fa-solid fa-arrow-left"></i>
         </button>
-        <button class="btn btn-dark rounded-circle p-3" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <button class="btn btn-dark rounded-circle p-3" type="button" data-bs-target="#portfolio_carousel" data-bs-slide="next">
           <i class="fa-solid fa-arrow-right"></i>
         </button>
         </div>
         <div class="carousel_cont">
-          <div id="carouselExample" class="carousel slide">
+          <div id="portfolio_carousel" class="carousel slide">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <div class="img_cont">
@@ -235,8 +257,9 @@
             AWARDS
           </p>
         </div>
-      <div class="card_cont" id="card">
-        <div class="card-body">
+      <div class="card_grid_2">
+        <div class="card_cont" id="card">
+        <div class="card_body">
           <p class="card_num">01/</p>
           <h5 class="title">
             <i class="fa-solid fa-code fa-2xl title_icon"></i>
@@ -250,9 +273,25 @@
           </p>
         </div>
       </div>
+      <div class="card_cont" id="card">
+        <div class="card_body">
+          <p class="card_num">01/</p>
+          <h5 class="title">
+            <i class="fa-solid fa-code fa-2xl title_icon"></i>
+            Web Development
+          </h5>
+          <p class="card-text">
+            With knowledge of HTML5, 
+            CSS, & bootsrap i can make
+            your dream website an instant
+            reality
+          </p>
+        </div>
+      </div>
+      </div>
     </section>
     <section id="blog" class="journal_section">
-      <div class="card_cont portfolio">
+      <div class="portfolio">
         <div class="head_container">
           <p class="header">
             <i class="fa-solid fa-circle-notch fa-lg circle"></i> 
@@ -272,15 +311,15 @@
           </div>
         </div>
         <div class="btn_icon_cont">
-          <button class="btn btn-dark rounded-circle p-3" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <button class="btn btn-dark rounded-circle p-3" type="button" data-bs-target="#blog_carousel" data-bs-slide="prev">
           <i class="fa-solid fa-arrow-left"></i>
         </button>
-        <button class="btn btn-dark rounded-circle p-3" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <button class="btn btn-dark rounded-circle p-3" type="button" data-bs-target="#blog_carousel" data-bs-slide="next">
           <i class="fa-solid fa-arrow-right"></i>
         </button>
         </div>
         <div class="carousel_cont">
-          <div id="carouselExample" class="carousel slide">
+          <div id="blog_carousel" class="carousel slide">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <div class="img_cont">
@@ -307,31 +346,39 @@
       </div>
     </section>
     <footer id="contact">
-      <div class="head_container">
+      <div class="head_container foot">
         <p class="header">
           <i class="fa-solid fa-circle-notch fa-lg circle"></i> 
            CONTACT
         </p>
       </div>
+      <p class="header Services">
+        LETS TALK
+      </p>
       <div class="footer_contacts_container">
-        <p class="footer_header">
-          EMAIL
-        </p>
-        <p class="footer_txt">
-          iheritage934@gmail.com
-        </p>
-        <p class="footer_header">
-          CALL
-        </p>
-        <p class="footer_txt">
-          +234 905 488 3022
-        </p>
+        <div class="grid_1">
+          <p class="footer_header">
+            EMAIL
+          </p>
+          <p class="footer_txt">
+            iheritage934@gmail.com
+          </p>
+        </div>
+        <div class="grid_2">
+         <p class="footer_header">
+            CALL
+          </p>
+          <p class="footer_txt">
+            +234 905 488 3022
+          </p> 
+        </div>
       </div>
       <form action="#">
-        <input class="mb-2" type="text" placeholder="Name">
-        <input class="mb-2" type="email" placeholder="Email">
-        <input class="mb-2" type="text" placeholder="Subject">
-        <textarea 
+        <input class="mb-3 form_1" type="text" placeholder="Name">
+        <input class="mb-3 form_2" type="email" placeholder="Email">
+        <input class="mb-3 form_3" type="text" placeholder="Subject">
+        <textarea
+        class="mb-3 form_4"
         name=""
         id="" 
         cols="30" 
