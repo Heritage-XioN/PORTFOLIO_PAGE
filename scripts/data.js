@@ -17,6 +17,28 @@ export const services = [
   },
   ]
    
+export const portfolio = [
+  {
+    isActive : "active" ,
+    src : "assets/images/Banner.jpeg",
+    alt : "banner_img",
+    title : "Visual Art ★ Concept",
+    headerTxt : "FOLD TWIST ABSTRACT" 
+  },
+  {
+    src : "assets/images/Banner.jpeg",
+    alt : "banner_img",
+    title : "Visual Art ★ Concept",
+    headerTxt : "FOLD TWIST ABSTRACT" 
+  },
+  {
+    src : "assets/images/Banner.jpeg",
+    alt : "banner_img",
+    title : "Visual Art ★ Concept",
+    headerTxt : "FOLD TWIST ABSTRACT" 
+  },
+  ]
+  
 export const awards = [
   {
     id : "01/",
@@ -35,23 +57,27 @@ export const awards = [
   },
   ]
    
-export const awardsCard = [
+export const blog = [
   {
-    id : "01/",
-    title : "gelo",
-    mainTxt : "yo just testing" 
+    isActive : "active" ,
+    src : "assets/images/Banner.jpeg",
+    alt : "banner_img",
+    title : "Visual Art ★ Concept",
+    headerTxt : "FOLD TWIST ABSTRACT" 
   },
   {
-    id : "02/",
-    title : "gelo",
-    mainTxt : "yo just testing" 
+    src : "assets/images/Banner.jpeg",
+    alt : "banner_img",
+    title : "Visual Art ★ Concept",
+    headerTxt : "FOLD TWIST ABSTRACT" 
   },
   {
-    id : "03/",
-    title : "gelo",
-    mainTxt : "yo just testing" 
+    src : "assets/images/Banner.jpeg",
+    alt : "banner_img",
+    title : "Visual Art ★ Concept",
+    headerTxt : "FOLD TWIST ABSTRACT" 
   },
   ]
-   
+  
    
     
