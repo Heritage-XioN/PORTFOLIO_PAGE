@@ -310,6 +310,9 @@ input{
   border: 1px solid #181A1C;
   color: #fff;
 }
+input:focus{
+
+}
 textarea{
   width: 100%;
   height: 9rem;
@@ -346,16 +349,22 @@ textarea{
 @media(min-width: 1025px){
   header{
     width: 100%;
-    padding: 1rem 25rem;
+    padding: 5rem 25rem 1rem 25rem;
   }
   .header,.profile_name{
-    font-size: 1.9rem;
+    font-size: 2.5rem;
   }
+  .Services{
+   font-size: 2.2rem;
+ }
+ .headline_container{
+   margin-left: 1rem;
+ }
   .headline{
     font-size: 1.2rem;
   }
   .txt{
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
   .stats{
     font-size: 4rem;
@@ -387,6 +396,9 @@ textarea{
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+  .card_cont{
+   padding: 1.3rem 1.4rem;
+ }
   .pc_view_1{
     grid-column: 1/2;
   }
@@ -399,6 +411,21 @@ textarea{
     grid-template-columns: 1fr 1fr;
     gap: 20px;
   }
+  .card_num{
+  padding-top: 0rem;
+  color: white;
+  font-size: 1.7rem;
+  margin: 0.2rem 0rem 0.4rem 0rem;
+  font-weight: bold;
+  }
+ .title{
+   font-weight: bold;
+   font-size: 1.9rem;
+ }
+ .card-text{
+   font-size: 1.6rem;
+   font-weight: 400;
+ }
   .portfolio_section,.journal_section{
     width: 100%;
     padding: 1rem 1rem;
@@ -406,27 +433,45 @@ textarea{
   .portfolio{
     padding-left: 10rem;
   }
-  .head_container,.card-body{
+  .card-body{
+    padding-left: 5rem;
+    width: 50%;
+  }
+  .carousel-inner,.carousel{
+    width: 85%;
+  }
+  .head_container{
     padding-left: 5rem;
   }
   .btn_icon_cont{
     padding-left: 5rem;
-    width: 25%;
+    width: 20%;
   }
   .carousel_cont{
     height: 50%;
   }
   .carousel_img{
-   width: 40%;
+   width: 45%;
    height: 15rem;
    border-radius: 10px;
+ }
+ .carousel_title{
+   font-size: 1.6rem;
+ }
+ .carousel_header{
+   font-size: 2rem;
  }
   footer{
     width: 100%;
     padding: 2rem 11rem;
   }
-  .foot{
-    
+.footer_header{
+  font-size: 2rem;
+  margin: 1rem 0rem 0.5rem 0rem;
+  }
+  .footer_txt{
+    font-size: 1.6rem;
+    font-weight: bold;
   }
   .footer_contacts_container{
     display: grid;
@@ -438,33 +483,49 @@ textarea{
   .grid_2{
     grid-column: 2/2;
   }
+::placeholder{
+  color: #3D3F41;
+  font-size: 1.4rem;
+}
   form{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 15px;
+    font-size: 1.5rem;
   }
   .form_1{
     grid-column: 1/2;
     grid-row: 1/2;
+    height: 4rem;
   }
   .form_2{
     grid-column: 2/2;
     grid-row: 1/2;
+    height: 4rem;
   }
   .form_3{
     grid-column: 1/span 3;
     grid-row: 2/3;
+    height: 4rem;
   }
  .form_4{
     grid-column: 1/span 3;
     grid-row: 3/4;
+    height: 12rem;
   }
   .submit_btn{
     grid-column: 1/2;
     grid-row: 4/4;
+    height: 4rem;
   }
   .copyright_txt_container{
     grid-column: 1/span 3;
     grid-row: 4/4;
   }
+  .copyright_txt{
+  padding-top: 2rem;
+  font-size: 1.5rem;
+  color: #B4B4B4;
+  margin: auto;
+}
 }
