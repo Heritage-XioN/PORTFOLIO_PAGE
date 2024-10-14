@@ -8,9 +8,6 @@
   overflow-x: auto;
   white-space: nowrap;
 }
-.carouselinner{
-  background-color: red;
-}
 .container-fluid{
   width: 100%;
   height: 100%;
@@ -63,8 +60,8 @@
   display: none;
   flex-direction: column;
   padding: 1.9rem 2.3rem;
-  width: 70%;
-  height: 60vh;
+  width: 60%;
+  height: 20rem;
   border-radius: 10px;
   position: fixed;
   right: 15px;
@@ -89,7 +86,8 @@ header{
   width: 40%;
   padding: 0.3rem 1.5rem 0.3rem 1rem;
   display: flex;
-  margin: auto;
+  justify-content: flex-end;
+  margin: auto 0px;
   border-right: 3px solid purple;
 }
 .profile_img{
@@ -354,10 +352,18 @@ textarea{
   margin: auto;
 }
 
-@media(min-width: 1025px){
+@media(min-width: 901px){
+ .navbar_card{
+  width: 30%;
+  height: 25rem;
+} 
+.menu_link{
+  font-size: 1.9rem;
+  
+}
   header{
     width: 100%;
-    padding: 5rem 25rem 1rem 25rem;
+    padding: 5rem 15rem 1rem 15rem;
   }
   .header,.profile_name{
     font-size: 2.5rem;
@@ -400,6 +406,9 @@ textarea{
     width: 100%;
     padding: 1rem 11rem;
   }
+  .three{
+    width: 95%;
+  }
   #service{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -439,7 +448,6 @@ textarea{
     padding: 1rem 1rem;
   }
   .portfolio{
-    padding-left: rem;
     display: flex;
   }
   .card-body{
@@ -458,6 +466,9 @@ textarea{
   }
   .head_container{
     padding-left: 5rem;
+  }
+  .extra{
+   padding-left: 0rem; 
   }
   .btn_icon_cont{
     padding-left: 5rem;
@@ -544,4 +555,57 @@ textarea{
   color: #B4B4B4;
   margin: auto;
 }
+}
+@media(min-width: 414px) and (max-width: 900px){
+  .container-fluid{
+    padding: 1rem 1rem;
+  }
+  .header,.profile_name{
+    font-size: 1.3rem;
+  }
+  .Services{
+   font-size: 1.4rem;
+ }
+  .headline{
+    font-size: 1rem;
+  }
+  .txt{
+    font-size: 1rem;
+  }
+  .stats{
+    font-size: 1.6rem;
+  }
+  .card_num{
+  font-size: 1.2rem;
+  }
+ .title{
+   font-size: 1.4rem;
+ }
+ .card-text{
+   font-size: 1rem;
+   font-weight: 400;
+ }
+  header{
+    width: 100%;
+    padding: 2rem 7rem 1rem 7rem;
+  }
+  .about_section{
+    width: 100%;
+    padding: 1rem 6rem;
+  }
+  section{
+    width: 100%;
+    padding: 1rem 4rem;
+  }
+  .portfolio,.card_cont{
+   padding-left: 2rem;
+   padding-right: 2rem;
+ }
+  .carousel_cont{
+    height: 50%;
+  }
+  footer{
+    width: 100%;
+    padding: 2rem 4rem;
+  }
 }

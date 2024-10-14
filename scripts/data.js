@@ -32,7 +32,7 @@ export const blog = [
     alt : "banner_img",
     title : "Visual Art ★ Concept",
     headerTxt : "FOLD TWIST ABSTRACT" 
-  },
+  }
   ]
   
    
